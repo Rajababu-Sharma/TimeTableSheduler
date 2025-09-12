@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Timetable Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <h1>Smart Timetable Scheduler</h1>
+  </div>
+
+  <div id="registerPage" class="page">
+    <h2>Register</h2>
+    <input type="text" id="regUsername" placeholder="Choose Username">
+    <input type="text" id="regContact" placeholder="Email or Phone">
+    <input type="password" id="regPassword" placeholder="Choose Password">
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+  </div>
+
+  <div id="loginPage" class="page hidden">
+    <h2>Login</h2>
+    <input type="text" id="loginContact" placeholder="Email or Phone">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>New user? <a href="#" onclick="showRegister()">Register here</a></p>
+  </div>
+
+  <div id="dashboard" class="page hidden">
+    <h2>Enter Timetable Parameters</h2>
+
+    <label for="numClasses">Number of Classes:</label>
+    <input type="number" id="numClasses" value="3" min="1" class="form-control">
+
+    <label for="numSections">Sections per Class:</label>
+    <input type="number" id="numSections" value="2" min="1" class="form-control">
+
+    <label for="numSubjects">Number of Subjects:</label>
+    <input type="number" id="numSubjects" value="7" min="1" class="form-control">
+
+    <label for="hoursPerDay">Hours Per Day:</label>
+    <input type="number" id="hoursPerDay" value="4" min="1" class="form-control">
+
+    <label for="numClassrooms">Available Classrooms:</label>
+    <input type="number" id="numClassrooms" value="4" min="1" class="form-control">
+
+    <label for="morningDuration">Morning Session Duration (hours):</label>
+    <input type="number" id="morningDuration" value="4" min="1" class="form-control">
+
+    <label for="eveningDuration">Evening Session Duration (hours):</label>
+    <input type="number" id="eveningDuration" value="4" min="1" class="form-control">
+
+    <button onclick="generateTimetable()">Generate Timetable</button>
+  </div>
+
+  <div id="timetablePage" class="page hidden">
+    <h2>Generated Timetable</h2>
+    <div id="timetable" class="timetable-container"></div>
+    <button onclick="backToDashboard()">Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

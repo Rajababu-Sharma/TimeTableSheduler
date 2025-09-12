@@ -1,0 +1,99 @@
+body {
+  background: url('WhatsApp Image 2025-09-12 at 20.48.07_36fcd2e8.jpg') no-repeat center center/cover, linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.page {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  color: white;
+}
+
+.hidden { display: none; }
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+input, button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(26, 8, 8);
+}
+
+input::placeholder { color: #584a4a; }
+
+button {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgb(41, 31, 31);
+}
+
+th {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.holiday {
+  background-color: #f44336;
+  color: white;
+}
